@@ -3,6 +3,7 @@ import {createSwitchNavigator, createAppContainer} from 'react-navigation';
 
 import TiffinMakerList from './TiffinMakerList';
 import TiffinCount from './TiffinCount';
+import AddTiffinMember from "./AddTiffinMember";
 
 const RootStack = createSwitchNavigator({
     TiffinMakerList: {
@@ -10,7 +11,10 @@ const RootStack = createSwitchNavigator({
     },
     TiffinCount: {
         screen: TiffinCount
-    }
+    },
+    AddTiffinMember: {
+        screen: AddTiffinMember
+    },
 });
 
 const AppNavigator = createAppContainer(RootStack);
